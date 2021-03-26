@@ -17,6 +17,9 @@ class add_port:
         self.sb = sb
         self.rb = rb
 
+    def read():
+        pass
+
 def main():
     find_ports()
 
