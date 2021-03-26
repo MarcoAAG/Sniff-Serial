@@ -1,0 +1,17 @@
+class new_port:
+  nameport
+  baudrate
+  stopbits
+  bits
+  read()
+
+def send()
+
+class encoder:
+  ascii()
+  hex()
+  dec()
+  bin()
+
+def display()
+

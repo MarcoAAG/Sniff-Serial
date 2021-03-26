@@ -1,0 +1,9 @@
+-User Configuration
+  --Port
+  --Baudrate
+  --stopbits
+  --Bits(8-9)
+
+  --encoder(hex,dec,bin,ascii)
+
+  --send str
