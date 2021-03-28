@@ -21,7 +21,12 @@ class add_port:
         pass
 
 def main():
-    find_ports()
+#    find_ports()
+#    var = add_port("name", 1, 9600, 0, 1);
+    a = 5
+#    a = "Hola"
+
+    print(a)
 
 if __name__ == "__main__":
     main()
