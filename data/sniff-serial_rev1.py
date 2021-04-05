@@ -26,8 +26,9 @@ def find_ports():
     print(ports_name)
 
 def main():
-    new_connection = serial_connection('COM5', 9600, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0)
-    new_connection.read();
+    find_ports()
+#     new_connection = serial_connection('COM5', 9600, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0)
+#     new_connection.read();
 
 if __name__ == "__main__":
     main()
