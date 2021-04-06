@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
+import "controls"
 
 Window {
     id: window
@@ -65,6 +66,40 @@ Window {
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.topMargin: 0
+
+                TopBarBtns {
+                    id: minimizeBtn
+                    y: 15
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                    anchors.leftMargin: 0
+                }
+
+                TopBarBtns {
+                    id: maximizeBtn
+                    y: 15
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                    btnIconSource: "../images/maximizeBtn.png"
+                    anchors.leftMargin: 35
+                }
+
+                TopBarBtns {
+                    id: exitBtn
+                    x: 71
+                    y: 15
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    btnColorClicked: "#ff5d5d"
+                    btnIconSource: "../images/closeBtn.png"
+                    anchors.rightMargin: 0
+                }
+            }
+
+            ToggleButton {
+                id: toggleButton
+                x: 21
+                y: 15
             }
         }
 
@@ -110,3 +145,9 @@ Window {
 }
 
 
+
+/*##^##
+Designer {
+    D{i:0;formeditorZoom:6}D{i:7}D{i:8}
+}
+##^##*/
